@@ -1,5 +1,5 @@
 function AccountHeader() {
-  return <>AccountHeader</>;
+  return <>AccountHeader</>
 }
 
-export default AccountHeader;
+export default AccountHeader

@@ -1,5 +1,5 @@
 function Signup() {
-  return <>signup</>;
+  return <>signup</>
 }
 
-export default Signup;
+export default Signup

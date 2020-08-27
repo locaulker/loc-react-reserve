@@ -1,5 +1,5 @@
 function AccountOrders() {
-  return <>AccountOrders</>;
+  return <>AccountOrders</>
 }
 
-export default AccountOrders;
+export default AccountOrders

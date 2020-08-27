@@ -1,5 +1,5 @@
 function ProductPagination() {
-  return <>ProductPagination</>;
+  return <>ProductPagination</>
 }
 
-export default ProductPagination;
+export default ProductPagination

@@ -1,5 +1,5 @@
 function ProductAttributes() {
-  return <>ProductAttributes</>;
+  return <>ProductAttributes</>
 }
 
-export default ProductAttributes;
+export default ProductAttributes

@@ -1,5 +1,5 @@
 function Cart() {
-  return <>cart</>;
+  return <>cart</>
 }
 
-export default Cart;
+export default Cart

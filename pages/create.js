@@ -1,5 +1,5 @@
 function CreateProduct() {
-  return <>create</>;
+  return <>create</>
 }
 
-export default CreateProduct;
+export default CreateProduct

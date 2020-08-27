@@ -1,5 +1,5 @@
 function AccountPermissions() {
-  return <>AccountPermissions</>;
+  return <>AccountPermissions</>
 }
 
-export default AccountPermissions;
+export default AccountPermissions

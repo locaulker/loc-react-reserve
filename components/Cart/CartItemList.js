@@ -1,5 +1,5 @@
 function CartItemList() {
-  return <>CartItemList</>;
+  return <>CartItemList</>
 }
 
-export default CartItemList;
+export default CartItemList

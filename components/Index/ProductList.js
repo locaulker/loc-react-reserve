@@ -1,5 +1,5 @@
 function ProductList() {
-  return <>ProductList</>;
+  return <>ProductList</>
 }
 
-export default ProductList;
+export default ProductList

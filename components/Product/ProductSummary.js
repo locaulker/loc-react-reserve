@@ -1,5 +1,5 @@
 function ProductSummary() {
-  return <>ProductSummary</>;
+  return <>ProductSummary</>
 }
 
-export default ProductSummary;
+export default ProductSummary

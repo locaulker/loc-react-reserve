@@ -1,5 +1,5 @@
 function CartSummary() {
-  return <>CartSummary</>;
+  return <>CartSummary</>
 }
 
-export default CartSummary;
+export default CartSummary

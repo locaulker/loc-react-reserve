@@ -1,5 +1,5 @@
 function AddProductToCart() {
-  return <>AddProductToCart</>;
+  return <>AddProductToCart</>
 }
 
-export default AddProductToCart;
+export default AddProductToCart
