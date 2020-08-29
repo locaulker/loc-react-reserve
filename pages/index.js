@@ -12,7 +12,7 @@ Home.getInitialProps = async () => {
   const response = await axios.get(url)
   return { products: response.data }
   // return response data as an object
-  // this object will be merged with exixting props
+  // this object will be merged with existing props
 }
 
 export default Home
