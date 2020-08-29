@@ -19,14 +19,12 @@ body {
   margin: 0;
   padding: 0.5em 1em 0.75em !important;
 }
+
 .ui.menu.fluid,
 .ui.vertical.menu.fluid {
   border-radius: unset;
 }
-.ui.menu > .container,
-.ui.menu > .grid {
-  height: 4rem;
-}
+
 .ui.inverted.menu .header.item {
   /* text-transform: uppercase; */
   font-weight: 100;
