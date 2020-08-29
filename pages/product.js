@@ -1,6 +1,9 @@
 import React from 'react'
 import axios from 'axios'
 
+import ProductSummary from '../components/Product/ProductSummary'
+import ProductAttributes from '../components/Product/ProductAttributes'
+
 Product.getInitialProps = async ({ query: { _id } }) => {
   const url = 'http://localhost:3000/api/product'
   const payload = { params: { _id } }
@@ -10,7 +13,12 @@ Product.getInitialProps = async ({ query: { _id } }) => {
 
 function Product({ product }) {
   console.log({ product })
-  return <>product</>
+  return (
+    <>
+      <ProductSummary {...product} />
+      <ProductAttributes {...product} />
+    </>
+  )
 }
 
 export default Product
