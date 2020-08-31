@@ -1,7 +1,24 @@
 import React from 'react'
+import { Header, Segment, Button, Icon } from 'semantic-ui-react'
 
 function CartItemList() {
-  return <>CartItemList</>
+  const user = true
+
+  return (
+    <Segment secondary color='brown' inverted textAlign='center' placeholder>
+      <Header icon>
+        <Icon name='shopping basket' />
+        No products in your cart. Add some!
+      </Header>
+      <div>
+        {user ? (
+          <Button color='black'>View Products</Button>
+        ) : (
+          <Button color='blue'>Login to Add Products</Button>
+        )}
+      </div>
+    </Segment>
+  )
 }
 
 export default CartItemList
