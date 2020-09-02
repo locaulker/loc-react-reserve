@@ -1,5 +1,6 @@
 import connectDb from '../../utils/connectDb'
 import User from '../../models/User'
+import Cart from '../../models/Cart'
 import bcrypt from 'bcrypt'
 import jwt from 'jsonwebtoken'
 import isEmail from 'validator/lib/isEmail'
@@ -32,16 +33,18 @@ export default async (req, res) => {
     const newUser = await new User({
       name,
       email,
-      password: hash,
+      password: hash
     }).save()
     console.log(newUser)
+    //  5) create a cart from new user
+    await new Cart({ user: newUser._id }).save()
 
-    //  5) create token for the new user
+    //  6) create token for the new user
     const token = jwt.sign({ userId: newUser._id }, process.env.JWT_SECRET, {
-      expiresIn: '7d',
+      expiresIn: '7d'
     })
 
-    //  6) send back token
+    //  7) send back token
     res.status(201).json(token)
   } catch (error) {
     console.error(error)
