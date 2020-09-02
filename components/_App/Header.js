@@ -7,14 +7,13 @@ Router.onRouteChangeStart = () => NProgress.start()
 Router.onRouteChangeComplete = () => NProgress.done()
 Router.onRouteChangeError = () => NProgress.done()
 
-function Header() {
+function Header({ user }) {
+  console.log(user)
   const router = useRouter()
 
   function isActive(route) {
     return route === router.pathname
   }
-
-  const user = false
 
   return (
     <Menu stackable fluid id='menu' inverted>
