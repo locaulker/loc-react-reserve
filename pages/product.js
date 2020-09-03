@@ -12,12 +12,11 @@ Product.getInitialProps = async ({ query: { _id } }) => {
   return { product: response.data }
 }
 
-function Product({ product }) {
-  console.log({ product })
+function Product({ product, user }) {
   return (
     <>
       <ProductSummary {...product} />
-      <ProductAttributes {...product} />
+      <ProductAttributes user={user} {...product} />
     </>
   )
 }
