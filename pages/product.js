@@ -15,7 +15,7 @@ Product.getInitialProps = async ({ query: { _id } }) => {
 function Product({ product, user }) {
   return (
     <>
-      <ProductSummary {...product} />
+      <ProductSummary user={} {...product} />
       <ProductAttributes user={user} {...product} />
     </>
   )
