@@ -7,7 +7,7 @@ import baseUrl from '../utils/baseUrl'
 function Home({ products, totalPages }) {
   return (
     <>
-      <ProductList products={products} />
+      <ProductList key={products.id} products={products} />
       <ProductPagination totalPages={totalPages} />
     </>
   )
