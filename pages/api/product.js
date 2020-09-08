@@ -36,7 +36,7 @@ async function handlePostRequest(req, res) {
       name,
       price,
       description,
-      mediaUrl
+      mediaUrl,
     }).save()
     res.status(201).json(product)
   } catch (error) {

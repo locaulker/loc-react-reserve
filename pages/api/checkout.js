@@ -55,7 +55,7 @@ export default async (req, res) => {
         description: `Checkout | ${paymentData.email} | ${paymentData.id}`,
       },
       {
-        itempotency_key: uuidv4(),
+        idempotency_key: uuidv4(),
       }
     )
 
@@ -65,7 +65,7 @@ export default async (req, res) => {
       email: paymentData.email,
       total: cartTotal,
       products: cart.products,
-    }).save
+    }).save()
 
     //  8) Clear products in cart
     await Cart.findOneAndUpdate({ _id: cart._id }, { $set: { products: [] } })
